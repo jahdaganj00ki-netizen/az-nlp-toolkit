@@ -39,3 +39,4 @@
 - Fixed Unicode handling for AZ/RU text (2025-12-22)
 - Updated API response format (2025-12-22)
 - Added rate limiting (2025-12-23)
+- Fixed concurrent access issue (2025-12-23)
