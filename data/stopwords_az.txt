@@ -1,0 +1,186 @@
+# Azerbaijani Stopwords
+# Curated from linguistic corpora and frequency analysis of Azerbaijani text.
+# Includes function words, pronouns, postpositions, conjunctions, and particles.
+#
+# Categories:
+#   - Pronouns (şəxs əvəzlikləri)
+#   - Conjunctions (bağlayıcılar)
+#   - Postpositions (qoşmalar)
+#   - Particles (ədatlar)
+#   - Auxiliary verbs (köməkçi fellər)
+#   - Demonstratives (işarə əvəzlikləri)
+#   - Common adverbs (zərflər)
+
+# --- Conjunctions / Bağlayıcılar ---
+və
+ya
+yaxud
+amma
+ancaq
+lakin
+həm
+nə
+ki
+da
+də
+habelə
+həmçinin
+yəni
+çünki
+ona görə
+buna görə
+belə ki
+halbuki
+gərçi
+
+# --- Pronouns / Əvəzliklər ---
+mən
+sən
+o
+biz
+siz
+onlar
+bu
+bunlar
+həmin
+öz
+özü
+özüm
+özün
+özümüz
+özünüz
+kim
+nə
+hər
+hamı
+heç
+bəzi
+
+# --- Postpositions / Qoşmalar ---
+ilə
+üçün
+kimi
+qədər
+haqqında
+görə
+barədə
+dair
+əvəzinə
+tərəfindən
+arasında
+qarşı
+sonra
+əvvəl
+bərabər
+birlikdə
+
+# --- Particles / Ədatlar ---
+bir
+çox
+az
+daha
+ən
+belə
+elə
+necə
+hələ
+artıq
+yalnız
+yenə
+təkcə
+sadəcə
+hətta
+məhz
+axı
+bax
+gör
+
+# --- Auxiliary / Copula ---
+idi
+imiş
+isə
+ikən
+edir
+etdi
+etmək
+oldu
+olur
+olmaq
+olan
+olmuş
+olub
+var
+yox
+deyil
+dir
+dır
+dur
+dür
+
+# --- Demonstratives / İşarə ---
+o
+bu
+həmin
+elə
+belə
+ora
+bura
+orada
+burada
+oraya
+buraya
+oradan
+buradan
+
+# --- Common adverbs / Zərflər ---
+indi
+sonra
+əvvəl
+hələ
+artıq
+yenidən
+həmişə
+heç vaxt
+bəzən
+tez
+gec
+yaxşı
+pis
+çox
+az
+daha
+ən
+
+# --- Question words ---
+nə
+kim
+hara
+niyə
+necə
+haçan
+neçə
+hansı
+nərədə
+haradan
+haraya
+
+# --- Numbers as words ---
+bir
+iki
+üç
+dörd
+beş
+on
+
+# --- Other high-frequency function words ---
+olan
+edən
+edilən
+olaraq
+haqqında
+öz
+hər
+bütün
+digər
+başqa
+eyni
