@@ -81,11 +81,11 @@ _COMPANY_SUFFIXES = [
     "MKB",   # Mərkəzi Kommersiya Bankı
 ]
 
-# Known major trade-related companies in Azerbaijan
+# Example trade-related company patterns for NER detection
 _KNOWN_COMPANIES = [
-    "SOCAR", "ARDNŞ", "Azərbaycan Dəmir Yolları",
-    "Azərbaycan Hava Yolları", "AzərSu",
-    "Azərtexnolayn", "Azərİxrac",
+    "Cənub Enerji", "Xəzər Logistika", "Şərq Ticarət",
+    "Atlas Nəqliyyat", "Silk Road Cargo",
+    "Qafqaz İnşaat", "Odlar Yurdu Trade",
 ]
 
 # --- Incoterms and trade terms ---
