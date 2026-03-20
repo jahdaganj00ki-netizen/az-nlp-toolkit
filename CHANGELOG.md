@@ -1,71 +1,20 @@
 # Changelog
 
-- Updated scoring algorithm weights (2025-10-01)
-- Added support for new data format (2025-10-01)
-- Optimized batch processing performance (2025-10-04)
-- Fixed memory leak in processor (2025-10-06)
-- Added new configuration options (2025-10-08)
-- Improved logging and monitoring (2025-10-16)
-- Fixed Unicode handling for AZ/RU text (2025-10-16)
-- Updated API response format (2025-10-20)
-- Added rate limiting (2025-10-23)
-- Fixed concurrent access issue (2025-10-23)
-- Improved test coverage (2025-10-27)
-- Added data export functionality (2025-10-29)
-- Fixed date parsing edge cases (2025-10-29)
-- Fixed edge case in data validation (2025-11-02)
-- Improved error handling for malformed input (2025-11-02)
-- Updated scoring algorithm weights (2025-11-05)
-- Added support for new data format (2025-11-10)
-- Optimized batch processing performance (2025-11-12)
-- Fixed memory leak in processor (2025-11-18)
-- Added new configuration options (2025-11-21)
-- Improved logging and monitoring (2025-11-21)
-- Fixed Unicode handling for AZ/RU text (2025-11-25)
-- Updated API response format (2025-11-28)
-- Added rate limiting (2025-12-01)
-- Fixed concurrent access issue (2025-12-04)
-- Improved test coverage (2025-12-05)
-- Added data export functionality (2025-12-08)
-- Fixed date parsing edge cases (2025-12-08)
-- Fixed edge case in data validation (2025-12-10)
-- Improved error handling for malformed input (2025-12-10)
-- Updated scoring algorithm weights (2025-12-12)
-- Added support for new data format (2025-12-15)
-- Optimized batch processing performance (2025-12-16)
-- Fixed memory leak in processor (2025-12-17)
-- Added new configuration options (2025-12-17)
-- Improved logging and monitoring (2025-12-19)
-- Fixed Unicode handling for AZ/RU text (2025-12-22)
-- Updated API response format (2025-12-22)
-- Added rate limiting (2025-12-23)
-- Fixed concurrent access issue (2025-12-23)
-- Improved test coverage (2025-12-29)
-- Added data export functionality (2025-12-29)
-- Fixed date parsing edge cases (2025-12-31)
-- Fixed edge case in data validation (2026-01-06)
-- Improved error handling for malformed input (2026-01-09)
-- Updated scoring algorithm weights (2026-01-12)
-- Added support for new data format (2026-01-14)
-- Optimized batch processing performance (2026-01-14)
-- Fixed memory leak in processor (2026-01-16)
-- Added new configuration options (2026-01-19)
-- Improved logging and monitoring (2026-01-20)
-- Fixed Unicode handling for AZ/RU text (2026-01-24)
-- Updated API response format (2026-01-24)
-- Added rate limiting (2026-01-27)
-- Fixed concurrent access issue (2026-02-09)
-- Improved test coverage (2026-02-09)
-- Added data export functionality (2026-02-13)
-- Fixed date parsing edge cases (2026-02-13)
-- Fixed edge case in data validation (2026-02-15)
-- Improved error handling for malformed input (2026-02-15)
-- Updated scoring algorithm weights (2026-02-16)
-- Added support for new data format (2026-02-18)
-- Optimized batch processing performance (2026-02-18)
-- Fixed memory leak in processor (2026-02-20)
-- Added new configuration options (2026-02-22)
-- Improved logging and monitoring (2026-02-23)
-- Fixed Unicode handling for AZ/RU text (2026-02-23)
-- Updated API response format (2026-02-28)
-- Added rate limiting (2026-02-28)
+## [0.3.0] - 2026-01-20
+### Added
+- Named entity recognition for trade documents (COMPANY, HS_CODE, PORT, COUNTRY)
+- Cross-lingual similarity using sentence-transformers
+- Text normalization with diacritics restoration
+
+### Changed
+- Improved stemmer accuracy with vowel harmony awareness
+
+## [0.2.0] - 2025-11-15
+### Added
+- Latin-Cyrillic bidirectional transliteration
+- Azerbaijani stopwords (130+ curated entries)
+
+## [0.1.0] - 2025-10-01
+### Added
+- Initial release: tokenizer and rule-based stemmer
+- AZ-specific abbreviation handling
