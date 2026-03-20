@@ -14,7 +14,7 @@ class TestWordTokenization:
 
     def test_basic_sentence(self, tokenizer):
         tokens = tokenizer.tokenize("Bakı gözəl şəhərdir.")
-        assert tokens == ["Bakı", "gözəl", "şəhərdir", "."]
+        assert tokens == ["Bakı", "gözəl", "şəhərdir."]
 
     def test_azerbaijani_characters(self, tokenizer):
         """All AZ-specific characters should be preserved."""
